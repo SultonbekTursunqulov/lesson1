@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    /* font family variables */
+    --primary-font: 'Raleway', sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+    /* font sizes variables */
+    --fs16: 16px;
+    --fs18: 18px;
+    --fs19: 19px;
+    --fs20: 20px;
+    --fs36: 36px;
+    --fs50: 50px;
+    --fs72: 72px;
+    /* color variables */
+    --green: #69CF17;
+    --white: #fff;
+    --black: #0C0C0C;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+.jc-between {
+    justify-content: space-between;
+}
+
+/* header style */
+.header-top {
+    background: var(--black);
+    border-bottom: 1px solid rgba(125, 115, 115, 0.5);
+    padding: 18px 0;
+}
+
+.header-top__logo {
+    font-family: var(--secondary-font);
+    font-size: var(--fs16);
+    line-height: 19px;
+    color: var(--white);
+}
+
+.header-top__logo i {
+    font-size: var(--fs20);
+}
+
+.header-top__list {
+    display: flex;
+    align-items: center;
+}
+
+.header-top__item {
+    margin-left: 20px;
+}
+
+.header-top__link {
+    font-family: var(--secondary-font);
+    font-size: var(--fs16);
+    line-height: 19px;
+    color: var(--white);
+}
+
+/* header nav style */
+.header-nav {
+    background-color: var(--black);
+    border-bottom: 1px solid rgba(125, 115, 115, 0.5);
+}
+
+.logo {
+    background: rgba(10, 148, 24, 0.75);
+    border: 4px solid #06600F;
+    border-radius: 4px;
+    padding: 12px 18px;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: var(--fs36);
+    line-height: 30px;
+    color: var(--white);
+}
+
+.nav-ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    display: block;
+    padding: 22px 14px;
+    font-weight: 400;
+    font-size: var(--fs18);
+    line-height: 21px;
+    color: var(--white);
+}
+
+.nav-link:hover {
+    background: rgba(105, 207, 23, 0.75);
+}
+
+.header-content {
+    width: 100%;
+    height: calc(100vh - 125px);
+    background: url('./img/food-burger-bg.jpg') no-repeat center center / cover;
+    padding: 167px 0;
+}
+
+.title {
+    font-weight: 900;
+    font-size: var(--fs72);
+    line-height: 85px;
+    color: var(--green);
+    margin-bottom: 18px;
+}
+
+.description {
+    font-weight: 400;
+    font-size: var(--fs36);
+    line-height: 17px;
+    color: var(--green);
+    margin-bottom: 18px;
+}
+
+.text {
+    font-weight: 400;
+    font-size: var(--fs18);
+    line-height: 24px;
+    color: var(--white);
+    margin-bottom: 30px;
+}
+
+.price {
+    background: rgba(105, 207, 23, 0.5);
+    backdrop-filter: blur(9px);
+    padding: 33px 76px;
+    font-weight: 100;
+    font-size: var(--fs50);
+    line-height: 25px;
+    color: var(--white);
+}
+
+.show {
+    background: linear-gradient(90deg, #69CF17 0%, #417D11 100%);
+    border-radius: 6px;
+    font-size: var(--fs18);
+    line-height: 21px;
+    color: var(--white);
+    padding: 15px 70px;
+    border: none;
+    cursor: pointer;
+}
+
+/* burgers section style */
+#burgers {
+    padding: 50px 0;
+    background: var(--black);
+}
+
+.burgers-nav {
+    padding: 0 15px;
+    background: #292929;
+    box-shadow: 0px 1px 8px rgba(17, 17, 17, 0.3);
+}
+
+.burgers-link {
+    display: block;
+    padding: 20px 6px;
+    font-size: var(--fs18);
+    line-height: 24px;
+    color: var(--white);
+    margin-right: 25px;
+    border-bottom: 1px solid transparent;
+}
+
+.burgers-link:hover {
+    border-color: var(--white);
+}
+
+.burgers-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #393636;
+    padding: 15px;
+}
+
+.burgers-item {
+    width: 23%;
+    background: #0C0C0C;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    padding: 15px 16px;
+    margin-bottom: 30px;
+}
+
+.burgers-item:hover .item-shadow {
+    transform: translate(0);
+}
+
+.item-shadowImg {
+    height: 325px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.item-image {
+    width: 100%;
+    height: 100%;
+}
+
+.item-shadow {
+    width: 100%;
+    height: 100%;
+    background: rgba(105, 207, 23, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    transform: translate(150%);
+    transition: 0.5s;
+}
+
+.item-shadow a {
+    color: var(--white);
+}
+
+.item-title {
+    font-size: var(--fs19);
+    line-height: 15px;
+    color: var(--white);
+    margin-bottom: 15px;
+}
+
+.item-text {
+    font-size: var(--fs19);
+    line-height: 25px;
+    color: var(--white);
+}
+
+/* section map style */
+.map {
+    padding: 20px 0 0;
+    background-color: var(--white);
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: var(--fs50);
+    line-height: 40px;
+    color: var(--green);
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+#map {
+    width: 100%;
+    height: 500px;
+}
+
+/* footer style */
+.footer-content {
+    padding: 30px 0 80px;
+    background: linear-gradient(180deg, #000000 0%, rgba(105, 207, 23, 0.5) 100%);
+}
+
+.phone-number {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: var(--fs20);
+    line-height: 23px;
+    color: var(--white);
+}
+
+.footer-nav {
+    margin: 80px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-nav a {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: var(--fs20);
+    line-height: 23px;
+    color: var(--white);
+    margin: 0 10px;
+}
+
+.footer-end {
+    background: #1A3406;
+    padding: 19px;
+    text-align: center;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: var(--fs16);
+    line-height: 19px;
+    color: var(--white);
+}

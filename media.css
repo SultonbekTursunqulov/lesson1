@@ -1,0 +1,198 @@
+@media (max-width: 1200px) {
+    .burgers-item {
+        width: 30%;
+    }
+}
+
+@media (max-width: 992px) {
+    .header-top__list {
+        display: none;
+    }
+
+    .logo {
+        padding: 10px 12px;
+        font-size: 24px;
+        line-height: 25px;
+    }
+
+    .nav-ul {
+        display: none;
+    }
+    .burgers-item {
+        width: 48%;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .logo {
+        padding: 8px 10px;
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .header-content {
+        padding: 40px 0;
+    }
+
+    .title {
+        font-size: 35px;
+        line-height: 35px;
+        margin-bottom: 10px;
+    }
+
+    .description {
+        font-size: 22px;
+        line-height: 22px;
+        margin-bottom: 10px;
+    }
+
+    .text {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .price {
+        font-size: 30px;
+        padding: 18px 35px;
+    }
+
+    .show {
+        font-size: 14px;
+        padding: 12px 30px;
+    }
+
+    .burgers-ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .burgers-item {
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        width: 550px;
+    }
+
+    .header-content {
+        padding: 45px 0;
+    }
+
+    .title {
+        font-size: 40px;
+        line-height: 38px;
+        margin-bottom: 10px;
+    }
+
+    .description {
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+
+    .text {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .price {
+        font-size: 30px;
+        padding: 18px 35px;
+    }
+
+    .show {
+        font-size: 16px;
+        padding: 12px 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 993px) {
+    .container {
+        width: 950px;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .header-content {
+        padding: 70px 0;
+    }
+
+    .title {
+        font-size: 50px;
+        line-height: 50px;
+        margin-bottom: 14px;
+    }
+
+    .description {
+        font-size: 25px;
+        line-height: 25px;
+        margin-bottom: 14px;
+    }
+
+    .text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .price {
+        font-size: 35px;
+        padding: 20px 40px;
+    }
+
+    .show {
+        font-size: 16px;
+        padding: 15px 35px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+
+    .header-content {
+        padding: 140px 0;
+    }
+
+    .title {
+        font-size: 72px;
+        line-height: 85px;
+        margin-bottom: 18px;
+    }
+
+    .description {
+        font-size: 50px;
+        line-height: 17px;
+        margin-bottom: 18px;
+    }
+
+    .text {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .price {
+        font-size: 50px;
+        padding: 33px 75px;
+    }
+
+    .show {
+        font-size: 18px;
+        padding: 15px 70px;
+    }
+}
